@@ -4,3 +4,5 @@ export class ServiceConstants {
     readonly saveRecipes = 'http://localhost:8080/recipe/recipes';
     readonly fetchRecipes = 'http://localhost:8080/recipe/recipes';
 }
+
+// Changed URL's
