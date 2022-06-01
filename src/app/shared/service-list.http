@@ -1,0 +1,85 @@
+###
+GET http://localhost:8080/recipes
+Accept: application/json
+Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiZXhwIjoxNjIxNTExNjI2fQ.lvlOzAPmnxbY2L1n5JybCeo-LlTgNP40PB3aqx5rvfyX2Wj4SqwXz_2RkQu4nCVSDZldjJXWPpG7gTPwM8NnOA
+
+###
+POST http://localhost:8080/recipe/users/login
+
+Accept: application/json
+Content-Type: : application/json
+
+{
+    "email": "test@test.com",
+    "password": "test@test.com"
+}
+
+###
+
+POST http://localhost:8080/recipe/recipes
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer  Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhc2RmQGFzZGYiLCJleHAiOjE2Mjc2NDg1MTd9.FBL-1HBnzoFvRFuEIoLW-JIDDuucdieqf8VQB3Kbzd1orXUPM1t8kZ5fksQtfrvhpo6pyrHOT3cAz3ofX9FK6Q
+
+[
+    {
+        "name": "Dosa",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsDhPIQtwv5Fe78NQNvus7L1MRNT3fCOAVPw&usqp=CAU",
+        "description": "Simply Dosa",
+        "ingredients": [
+            {
+                "name": "Tomato",
+                "amount": "4"
+            },
+            {
+                "name": "Rice",
+                "amount": "3"
+            }
+        ]
+    }, 
+    {
+        "name": "Samosa",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSykAngJdnsma5jZFB4mmnieLz1PLO8rU7Q&usqp=CAU",
+        "description": "Simply Samosa",
+        "ingredients": [
+            {
+                "name": "Potato",
+                "amount": "4"
+            },
+            {
+                "name": "Bread",
+                "amount": "3"
+            }
+        ]
+    }, 
+    {
+        "name": "Chole",
+        "imagePath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPakI4KrmYSe0NxbnQ_RSGouy2CYdS843JA&usqp=CAU",
+        "description": "Chole",
+        "ingredients": [
+            {
+                "name": "Chole",
+                "amount": "4"
+            },
+            {
+                "name": "Masala Mix",
+                "amount": "3"
+            }
+        ]
+    },
+    {
+        "name": "Pakode",
+        "imagePath": "https://sukhis.com/wp-content/uploads/2017/06/Appetizers.jpg",
+        "description": "Dry Pakode",
+        "ingredients": [
+            {
+                "name": "Meshed Potato",
+                "amount": "4"
+            },
+            {
+                "name": "Masala Mix",
+                "amount": "3"
+            }
+        ]
+    }
+]
