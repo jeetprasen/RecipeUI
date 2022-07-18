@@ -2342,7 +2342,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"row\">\r\n    <div class=\"col-xs-12 col-md-6 col-md-offset-3\">\r\n        <!-- <div class=\"alert alert-danger\" *ngIf=\"error\">\r\n            <p>{{error}}</p>\r\n        </div> -->\r\n        <app-alert [message]=\"error\" (close)=\"onHandleError()\" *ngIf=\"error\"></app-alert>\r\n        <div *ngIf=\"isLoading\" style=\"text-align: center;\">\r\n            <app-loading-spinner></app-loading-spinner>\r\n        </div>\r\n        <form #authForm=\"ngForm\" (ngSubmit)=\"onSubmit(authForm)\" *ngIf=\"!isLoading\">\r\n            <div class=\"form-group\" *ngIf=\"!isLoginMode\">\r\n                <label for=\"firstname\">FirstName</label>\r\n                <input type=\"firstname\" class=\"form-control\" ngModel name=\"firstname\" required minlength=\"3\" >\r\n            </div>\r\n            <div class=\"form-group\" *ngIf=\"!isLoginMode\">\r\n                <label for=\"lastname\">LastName</label>\r\n                <input type=\"lastname\" class=\"form-control\" ngModel name=\"lastname\" required minlength=\"3\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"email\">E-Mail</label>\r\n                <input type=\"email\" class=\"form-control\" ngModel name=\"email\" required email >\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"password\">Passwords</label>\r\n                <input type=\"password\" class=\"form-control\" ngModel name=\"password\" required minlength=\"6\">\r\n            </div>\r\n            <div>\r\n                <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"!authForm.valid\">{{ isLoginMode ? 'Login': 'Sign Up'}}</button> | \r\n                <button class=\"btn btn-primary\" type=\"button\" (click)=\"onSwitchMode()\">{{ isLoginMode ? 'Sign Up': 'Login'}}</button>\r\n            </div>\r\n        </form>\r\n    </div>\r\n</div>"
+            "templateData": "<div class=\"row\">\r\n    <div class=\"col-xs-12 col-md-6 col-md-offset-3\">\r\n        <!-- <div class=\"alert alert-danger\" *ngIf=\"error\">\r\n            <p>{{error}}</p>\r\n        </div> -->\r\n        <app-alert [message]=\"error\" (close)=\"onHandleError()\" *ngIf=\"error\"></app-alert>\r\n        <div *ngIf=\"isLoading\" style=\"text-align: center;\">\r\n            <app-loading-spinner></app-loading-spinner>\r\n        </div>\r\n        <form #authForm=\"ngForm\" (ngSubmit)=\"onSubmit(authForm)\" *ngIf=\"!isLoading\">\r\n            <div class=\"form-group\" *ngIf=\"!isLoginMode\">\r\n                <label for=\"firstname\">FirstName</label>\r\n                <input type=\"firstname\" class=\"form-control\" ngModel name=\"firstname\" required minlength=\"3\" >\r\n            </div>\r\n            <div class=\"form-group\" *ngIf=\"!isLoginMode\">\r\n                <label for=\"lastname\">LastName</label>\r\n                <input type=\"lastname\" class=\"form-control\" ngModel name=\"lastname\" required minlength=\"3\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"email\">E-Mail</label>\r\n                <input type=\"email\" class=\"form-control\" ngModel name=\"email\" required email >\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"password\">Password</label>\r\n                <input type=\"password\" class=\"form-control\" ngModel name=\"password\" required minlength=\"6\">\r\n            </div>\r\n            <div>\r\n                <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"!authForm.valid\">{{ isLoginMode ? 'Login': 'Sign Up'}}</button> | \r\n                <button class=\"btn btn-primary\" type=\"button\" (click)=\"onSwitchMode()\">{{ isLoginMode ? 'Sign Up': 'Login'}}</button>\r\n            </div>\r\n        </form>\r\n    </div>\r\n</div>"
         },
         {
             "name": "HeaderComponent",
@@ -4067,21 +4067,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "nonLoginMode",
@@ -4230,18 +4230,6 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -4252,6 +4240,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/Loading.stories.ts": [
